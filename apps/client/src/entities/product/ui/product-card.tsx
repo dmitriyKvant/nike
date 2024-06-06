@@ -1,6 +1,5 @@
 import { Card, CardFooter } from "@nextui-org/card"
-import { Image } from "@nextui-org/image"
-import NextImage from "next/image"
+import Image from "next/image"
 import Link from "next/link"
 
 import { findDiscountPercentage } from "@/shared/lib"
@@ -22,8 +21,6 @@ export const ProductCard: React.FC<IProductAttributes> = ({
 				shadow="none"
 				className="col-span-4 h-[474.66px] transition-transform hover:scale-105">
 				<Image
-					as={NextImage}
-					radius="none"
 					src={picture.data.attributes.formats.small?.url ?? picture.data.attributes.url}
 					alt={picture.data.attributes.alternativeText ?? "Sneakers"}
 					width={386.66}
@@ -53,8 +50,6 @@ export const ProductCard: React.FC<IProductAttributes> = ({
 			shadow="none"
 			className="col-span-4 h-[474.66px] transition-transform hover:scale-105">
 			<Image
-				as={NextImage}
-				radius="none"
 				src={picture.data.attributes.formats.small?.url ?? picture.data.attributes.url}
 				alt={picture.data.attributes.alternativeText ?? "Sneakers"}
 				width={386.66}

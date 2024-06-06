@@ -7,7 +7,7 @@ export default {
 	darkMode: "class",
 	content: [
 		"./src/**/*.(ts|tsx)",
-		"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link|image).js",
+		"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js",
 	],
 	theme: {
 		container: {

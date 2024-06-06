@@ -1,12 +1,11 @@
 "use client"
 
 import { ButtonGroup } from "@nextui-org/button"
-import { Image } from "@nextui-org/image"
 import { Link } from "@nextui-org/link"
 import { Skeleton } from "@nextui-org/skeleton"
 import { useQuery } from "@tanstack/react-query"
 import Autoplay from "embla-carousel-autoplay"
-import NextImage from "next/image"
+import Image from "next/image"
 import NextLink from "next/link"
 
 import {
@@ -47,8 +46,6 @@ export const ProductCarousel: React.FC = () => {
 							key={slider.id}
 							className="relative h-[595px]">
 							<Image
-								as={NextImage}
-								radius="none"
 								src={slider.attributes.picture.data.attributes.url}
 								alt={slider.attributes.picture.data.attributes.alternativeText ?? "Sneakers"}
 								width={1360}
