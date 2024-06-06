@@ -1,0 +1,17 @@
+turbopack
+svgr
+nextui
+opentelemetry
+trivago
+pxtorem
+strapi
+knex
+nextjs
+postcss
+tailwindcss
+autoprefixer
+codemirror
+punycode
+clsx
+tanstack
+nextauth

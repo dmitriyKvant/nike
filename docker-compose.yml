@@ -1,0 +1,54 @@
+services:
+  client:
+    container_name: client
+    build:
+      context: ./
+      dockerfile: ./apps/client/Dockerfile
+    restart: always
+    env_file:
+      - ./apps/client/.env
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    volumes:
+      - ./apps/client:/app/apps/client
+    networks:
+      - cms
+    depends_on:
+      - cms
+  cms:
+    container_name: cms
+    build:
+      context: ./
+      dockerfile: ./apps/cms/Dockerfile
+    restart: always
+    env_file:
+      - ./apps/cms/.env
+    ports:
+      - 1337:1337
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    volumes:
+      - ./apps/cms:/app/apps/cms
+    networks:
+      - cms
+    depends_on:
+      - cmsDB
+  cmsDB:
+    container_name: cmsDB
+    image: postgres:16-alpine3.19
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: cmsDB
+      PGDATA: /var/lib/postgresql/data
+    networks:
+      - cms
+networks:
+  cms:
+    name: cms
+    driver: bridge

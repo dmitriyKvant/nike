@@ -1,0 +1,6 @@
+# Base
+.turbo
+
+.env
+
+.yarn/unplugged

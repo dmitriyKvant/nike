@@ -1,0 +1,25 @@
+# Base
+dist
+
+# Yarn
+.yarn
+.pnp.cjs
+.pnp.loader.mjs
+yarn.lock
+
+# Next
+.next
+next-env.d.ts
+
+# Strapi 
+.strapi
+apps/cms/types
+
+# Playwright
+test-results
+playwright-report
+blob-report
+playwright/.cache
+
+# Sentry 
+.sentryclirc

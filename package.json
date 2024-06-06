@@ -1,0 +1,47 @@
+{
+	"private": true,
+	"name": "@turbo/fasco",
+	"type": "module",
+	"author": "Dmitriy Kvant",
+	"scripts": {
+		"preinstall": "npx only-allow yarn",
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"test": "turbo test",
+		"test:e2e": "turbo test:e2e",
+		"format": "prettier -w .",
+		"cspell-check": "cspell .",
+		"storybook": "turbo storybook",
+		"build-storybook": "turbo build-storybook"
+	},
+	"devDependencies": {
+		"@turbo/eslint-config": "*",
+		"@turbo/prettier-config": "*",
+		"@turbo/typescript-config": "*",
+		"cspell": "^8.8.4",
+		"eslint": "8.57.0",
+		"prettier": "^3.3.1",
+		"turbo": "^2.0.2",
+		"typescript": "5.4.3"
+	},
+	"dependenciesMeta": {
+		"@nextui-org/theme@2.2.5": {
+			"unplugged": true
+		},
+		"@trivago/prettier-plugin-sort-imports@4.3.0": {
+			"unplugged": true
+		},
+		"next@14.2.3": {
+			"unplugged": true
+		},
+		"prettier-plugin-tailwindcss@0.4.1": {
+			"unplugged": true
+		}
+	},
+	"packageManager": "yarn@4.2.2",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
+}
