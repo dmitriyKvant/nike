@@ -6256,43 +6256,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@nextui-org/image", [\
-      ["npm:2.0.28", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/@nextui-org-image-npm-2.0.28-4c3e363842-10c0.zip/node_modules/@nextui-org/image/",\
-        "packageDependencies": [\
-          ["@nextui-org/image", "npm:2.0.28"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.28", {\
-        "packageLocation": "./.yarn/__virtual__/@nextui-org-image-virtual-3e40312df2/4/home/lokich01/.yarn/berry/cache/@nextui-org-image-npm-2.0.28-4c3e363842-10c0.zip/node_modules/@nextui-org/image/",\
-        "packageDependencies": [\
-          ["@nextui-org/image", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.28"],\
-          ["@nextui-org/react-utils", "virtual:76febf85fe173ccaf621dbecd7742c5066fb54c4d9ddde11b870839143b27f2bf74d82328878a17dd22c925963d2e9a848c11955108c439814d14e450d1bf7fd#npm:2.0.13"],\
-          ["@nextui-org/shared-utils", "npm:2.0.5"],\
-          ["@nextui-org/system", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.2.1"],\
-          ["@nextui-org/theme", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.2.5"],\
-          ["@nextui-org/use-image", "virtual:3e40312df27306d65ce9cc2fcc1368c9c8c89dc38a87ccae3d76e071de40a3ea3c0269cd640a7dbc30a3d714aecfdfad51dd32a51744d84e6139d798026f4f06#npm:2.0.5"],\
-          ["@types/nextui-org__system", null],\
-          ["@types/nextui-org__theme", null],\
-          ["@types/react", "npm:18.3.3"],\
-          ["@types/react-dom", null],\
-          ["react", "npm:18.3.1"],\
-          ["react-dom", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:18.3.1"]\
-        ],\
-        "packagePeers": [\
-          "@nextui-org/system",\
-          "@nextui-org/theme",\
-          "@types/nextui-org__system",\
-          "@types/nextui-org__theme",\
-          "@types/react-dom",\
-          "@types/react",\
-          "react-dom",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@nextui-org/link", [\
       ["npm:2.0.31", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/@nextui-org-link-npm-2.0.31-c67fc6d58a-10c0.zip/node_modules/@nextui-org/link/",\
@@ -6754,29 +6717,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@nextui-org/use-image", [\
-      ["npm:2.0.5", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/@nextui-org-use-image-npm-2.0.5-5381e3ffb7-10c0.zip/node_modules/@nextui-org/use-image/",\
-        "packageDependencies": [\
-          ["@nextui-org/use-image", "npm:2.0.5"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:3e40312df27306d65ce9cc2fcc1368c9c8c89dc38a87ccae3d76e071de40a3ea3c0269cd640a7dbc30a3d714aecfdfad51dd32a51744d84e6139d798026f4f06#npm:2.0.5", {\
-        "packageLocation": "./.yarn/__virtual__/@nextui-org-use-image-virtual-438e3c7c55/4/home/lokich01/.yarn/berry/cache/@nextui-org-use-image-npm-2.0.5-5381e3ffb7-10c0.zip/node_modules/@nextui-org/use-image/",\
-        "packageDependencies": [\
-          ["@nextui-org/use-image", "virtual:3e40312df27306d65ce9cc2fcc1368c9c8c89dc38a87ccae3d76e071de40a3ea3c0269cd640a7dbc30a3d714aecfdfad51dd32a51744d84e6139d798026f4f06#npm:2.0.5"],\
-          ["@nextui-org/use-safe-layout-effect", "virtual:438e3c7c5565836e630421557a408bd14bcce8c1e6a7edc3795f531c3b0046163b72614df729947efc5cc3c01dafc4a85c6f86cf24f33a8ac8a459d7d7bab27b#npm:2.0.5"],\
-          ["@types/react", "npm:18.3.3"],\
-          ["react", "npm:18.3.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@nextui-org/use-measure", [\
       ["npm:2.0.1", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/@nextui-org-use-measure-npm-2.0.1-f2806a79b2-10c0.zip/node_modules/@nextui-org/use-measure/",\
@@ -6789,28 +6729,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@nextui-org-use-measure-virtual-f832f170f1/4/home/lokich01/.yarn/berry/cache/@nextui-org-use-measure-npm-2.0.1-f2806a79b2-10c0.zip/node_modules/@nextui-org/use-measure/",\
         "packageDependencies": [\
           ["@nextui-org/use-measure", "virtual:3162d0f0982fd51f77a246e2cc1d2b01b2fa61e12fe0129e48f75ae5821e5be2deee209ada865300c4fa27389688bf4f9241d63382b3d56a5d05bf938c87336a#npm:2.0.1"],\
-          ["@types/react", "npm:18.3.3"],\
-          ["react", "npm:18.3.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@nextui-org/use-safe-layout-effect", [\
-      ["npm:2.0.5", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/@nextui-org-use-safe-layout-effect-npm-2.0.5-32320414f1-10c0.zip/node_modules/@nextui-org/use-safe-layout-effect/",\
-        "packageDependencies": [\
-          ["@nextui-org/use-safe-layout-effect", "npm:2.0.5"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:438e3c7c5565836e630421557a408bd14bcce8c1e6a7edc3795f531c3b0046163b72614df729947efc5cc3c01dafc4a85c6f86cf24f33a8ac8a459d7d7bab27b#npm:2.0.5", {\
-        "packageLocation": "./.yarn/__virtual__/@nextui-org-use-safe-layout-effect-virtual-f4a33c2703/4/home/lokich01/.yarn/berry/cache/@nextui-org-use-safe-layout-effect-npm-2.0.5-32320414f1-10c0.zip/node_modules/@nextui-org/use-safe-layout-effect/",\
-        "packageDependencies": [\
-          ["@nextui-org/use-safe-layout-effect", "virtual:438e3c7c5565836e630421557a408bd14bcce8c1e6a7edc3795f531c3b0046163b72614df729947efc5cc3c01dafc4a85c6f86cf24f33a8ac8a459d7d7bab27b#npm:2.0.5"],\
           ["@types/react", "npm:18.3.3"],\
           ["react", "npm:18.3.1"]\
         ],\
@@ -16560,7 +16478,6 @@ const RAW_RUNTIME_STATE =
           ["@next/eslint-plugin-next", "npm:14.2.3"],\
           ["@nextui-org/button", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.33"],\
           ["@nextui-org/card", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.30"],\
-          ["@nextui-org/image", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.28"],\
           ["@nextui-org/link", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.31"],\
           ["@nextui-org/navbar", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.32"],\
           ["@nextui-org/skeleton", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.0.28"],\

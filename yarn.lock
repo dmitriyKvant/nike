@@ -4166,22 +4166,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextui-org/image@npm:^2.0.28":
-  version: 2.0.28
-  resolution: "@nextui-org/image@npm:2.0.28"
-  dependencies:
-    "@nextui-org/react-utils": "npm:2.0.13"
-    "@nextui-org/shared-utils": "npm:2.0.5"
-    "@nextui-org/use-image": "npm:2.0.5"
-  peerDependencies:
-    "@nextui-org/system": ">=2.0.0"
-    "@nextui-org/theme": ">=2.1.0"
-    react: ">=18"
-    react-dom: ">=18"
-  checksum: 10c0/774aef7a60ad6e6785ebe92b9070b488df6b6e1b67a4df19e99f62a0cc7602f5f6729826623af1698454c3b20ac80b0f3ecbb4444263f1797c7792b2021178a8
-  languageName: node
-  linkType: hard
-
 "@nextui-org/link@npm:^2.0.31":
   version: 2.0.31
   resolution: "@nextui-org/link@npm:2.0.31"
@@ -4408,32 +4392,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextui-org/use-image@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@nextui-org/use-image@npm:2.0.5"
-  dependencies:
-    "@nextui-org/use-safe-layout-effect": "npm:2.0.5"
-  peerDependencies:
-    react: ">=18"
-  checksum: 10c0/0efed852059f7d03dbfd144314efe5db9531f7ab59194f353a1f780244ee7e21d894501449833c2489edbd9470e44dfebae6811d5820bc1c5eb4d932471e9bd2
-  languageName: node
-  linkType: hard
-
 "@nextui-org/use-measure@npm:2.0.1":
   version: 2.0.1
   resolution: "@nextui-org/use-measure@npm:2.0.1"
   peerDependencies:
     react: ">=18"
   checksum: 10c0/ea72866b1c88cee64008652976903a5c10287262114ea279678476bb228992fc589eee48620c96d38089d9f5ab983371b1d0403201c0f1ebaa1d2e49bf923f01
-  languageName: node
-  linkType: hard
-
-"@nextui-org/use-safe-layout-effect@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@nextui-org/use-safe-layout-effect@npm:2.0.5"
-  peerDependencies:
-    react: ">=18"
-  checksum: 10c0/1b451000ab3fde87ef3df50da3156e22e5a3fd1cddc8e57f8106b682fb0448e829122959d3fd9b6cc90ac2884e93afb43aea7b33854b9b31939771f702a7e79c
   languageName: node
   linkType: hard
 
@@ -8962,7 +8926,6 @@ __metadata:
     "@next/eslint-plugin-next": "npm:^14.2.3"
     "@nextui-org/button": "npm:^2.0.33"
     "@nextui-org/card": "npm:^2.0.30"
-    "@nextui-org/image": "npm:^2.0.28"
     "@nextui-org/link": "npm:^2.0.31"
     "@nextui-org/navbar": "npm:^2.0.32"
     "@nextui-org/skeleton": "npm:^2.0.28"
