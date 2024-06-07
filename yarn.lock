@@ -9070,9 +9070,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@turbo/fasco@workspace:.":
+"@turbo/nike@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@turbo/fasco@workspace:."
+  resolution: "@turbo/nike@workspace:."
   dependencies:
     "@turbo/eslint-config": "npm:*"
     "@turbo/prettier-config": "npm:*"
