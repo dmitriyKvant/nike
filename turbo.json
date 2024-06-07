@@ -15,6 +15,11 @@
 				"dist/**"
 			]
 		},
+		"start": {
+			"dependsOn": [
+				"^start"
+			]
+		},
 		"lint": {
 			"dependsOn": [
 				"^lint"
