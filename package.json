@@ -4,7 +4,6 @@
 	"type": "module",
 	"author": "Dmitriy Kvant",
 	"scripts": {
-		"preinstall": "npx only-allow yarn",
 		"build": "turbo build",
 		"dev": "turbo dev",
 		"lint": "turbo lint",
