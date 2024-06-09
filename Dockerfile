@@ -12,6 +12,6 @@ COPY --from=builder /app/out/json/ .
 COPY --from=builder /app/out/yarn.lock ./yarn.lock
 RUN yarn workspaces focus @turbo/cms --production
 COPY --from=builder /app/out/full/ .
-RUN yarn build
-CMD ["yarn", "start"]
+RUN yarn dlx turbo@1.13.4 run build --filter=@turbo/cms...
+ENTRYPOINT ["yarn", "dlx", "turbo@1.13.4", "run", "start", "--filter=@turbo/cms..."]
 EXPOSE 1337
