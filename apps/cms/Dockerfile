@@ -1,6 +1,6 @@
 FROM node:20.14.0-alpine3.19 AS base
 
-FROM base as builder
+FROM base AS builder
 WORKDIR /app
 RUN yarn global add turbo
 COPY . .
