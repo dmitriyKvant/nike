@@ -1,14 +1,17 @@
 import { nextui } from "@nextui-org/theme"
+import path from "path"
 import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
 
+const nextUIUnpluggedPath = path.resolve(
+	__dirname,
+	"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js",
+)
+
 export default {
 	darkMode: "class",
-	content: [
-		"./src/**/*.(ts|tsx)",
-		"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js",
-	],
+	content: ["./src/**/*.(ts|tsx)", nextUIUnpluggedPath],
 	theme: {
 		container: {
 			center: true,
