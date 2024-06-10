@@ -7,7 +7,7 @@ import plugin from "tailwindcss/plugin"
 
 const nextUIUnpluggedPath = path.resolve(
 	process.cwd(),
-	"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/navbar.js",
+	"../../node_modules/@nextui-org/theme/dist/components/navbar.js",
 )
 if (process.env.VERCEL) {
 	fs.readFileSync(nextUIUnpluggedPath)
