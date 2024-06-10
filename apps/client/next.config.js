@@ -55,8 +55,8 @@ const config = {
 }
 
 export default withSentryConfig(config, {
-	org: "dmitriykvant",
-	project: "nike",
+	org: process.env.SENTRY_ORG,
+	project: process.env.SENTRY_PROJECT,
 	authToken: process.env.SENTRY_AUTH_TOKEN,
 	silent: !process.env.CI,
 	widenClientFileUpload: true,
