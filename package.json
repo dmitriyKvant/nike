@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "@turbo/fasco",
+	"name": "@turbo/nike",
 	"type": "module",
 	"author": "Dmitriy Kvant",
 	"scripts": {
@@ -22,7 +22,7 @@
 		"cspell": "^8.8.4",
 		"eslint": "8.57.0",
 		"prettier": "^3.3.1",
-		"turbo": "^2.0.2",
+		"turbo": "^1.13.4",
 		"typescript": "5.4.3"
 	},
 	"dependenciesMeta": {
@@ -39,7 +39,7 @@
 			"unplugged": true
 		}
 	},
-	"packageManager": "yarn@4.2.2",
+	"packageManager": "yarn@4.3.0",
 	"workspaces": [
 		"apps/*",
 		"packages/*"

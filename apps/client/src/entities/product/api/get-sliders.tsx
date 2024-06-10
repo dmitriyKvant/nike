@@ -10,7 +10,6 @@ const sliderQueries: Record<string, string> = {
 const sliderSearchParams = new URLSearchParams(sliderQueries)
 
 export const getSliders = async () => {
-	console.log(sliderSearchParams.toString())
 	const { data } = await http.get<ISliderResponse>(`/sliders?${sliderSearchParams.toString()}`)
 	return data
 }

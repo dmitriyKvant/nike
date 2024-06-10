@@ -3,7 +3,7 @@
 	"globalDependencies": [
 		".env"
 	],
-	"tasks": {
+	"pipeline": {
 		"build": {
 			"dependsOn": [
 				"^build"
@@ -13,6 +13,11 @@
 				"!.next/cache/**",
 				".strapi/**",
 				"dist/**"
+			]
+		},
+		"start": {
+			"dependsOn": [
+				"^start"
 			]
 		},
 		"lint": {

@@ -13,6 +13,5 @@ const productSearchParams = new URLSearchParams(productQueries)
 export const getProducts = async ({ page = 1 }: { page?: number } = {}) => {
 	productSearchParams.set("pagination[page]", String(page))
 	const { data } = await http.get<IProductResponse>(`/products?${productSearchParams.toString()}`)
-	console.log(data)
 	return data
 }
