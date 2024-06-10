@@ -1,16 +1,14 @@
 import { nextui } from "@nextui-org/theme"
-import fs from "fs"
-import path from "path"
 import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
 
-const nextUIUnpluggedPath = path.resolve(
-	process.cwd(),
-	"../../node_modules/@nextui-org/theme/dist/components/navbar.js",
-)
+let nextUIUnpluggedPath =
+	"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js"
+
 if (process.env.VERCEL) {
-	fs.readFileSync(nextUIUnpluggedPath)
+	nextUIUnpluggedPath =
+		"../../node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js"
 }
 
 export default {
