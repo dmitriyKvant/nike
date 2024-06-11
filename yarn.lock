@@ -6518,6 +6518,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sentry/types@npm:8.9.0":
+  version: 8.9.0
+  resolution: "@sentry/types@npm:8.9.0"
+  checksum: 10c0/1dec63de85c860fa69bf2d73d29e0b07c455f61d0bf01a3575bace3970c2b11c6a664b3b7fc8a9f7c843070b322049c0913884a81bce3c4f6e57f80bf538a3be
+  languageName: node
+  linkType: hard
+
 "@sentry/utils@npm:6.19.7":
   version: 6.19.7
   resolution: "@sentry/utils@npm:6.19.7"
@@ -6534,6 +6541,15 @@ __metadata:
   dependencies:
     "@sentry/types": "npm:8.8.0"
   checksum: 10c0/4c26309f5ac3497f7ec78438e317b7b6055e8f4a9ba467d1ad8b830b3471d5e394270070662c780f617a5db5ca2d117b2321f5ced55cb9b80ccf10c895cdaecf
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@npm:8.9.0":
+  version: 8.9.0
+  resolution: "@sentry/utils@npm:8.9.0"
+  dependencies:
+    "@sentry/types": "npm:8.9.0"
+  checksum: 10c0/6879eed0afa2e9485601d5c51a3337c83c430e8da39da1abcdadc9816ececc5c3bb2b490201759e1881b070f939bf48e4b3c5197c1cf4c0f076cbb38e72db1ca
   languageName: node
   linkType: hard
 
@@ -8560,21 +8576,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.40.0":
-  version: 5.40.0
-  resolution: "@tanstack/query-core@npm:5.40.0"
-  checksum: 10c0/8ed200657dcdc1c05a44571be07e7a9d9a6c19c4ac067560bfb9d065a9cfb3e0dbbd0c44c17814272fd0b8d559030e9f4b50fb917c4312bbe61c9848767fde38
+"@tanstack/query-core@npm:5.44.0":
+  version: 5.44.0
+  resolution: "@tanstack/query-core@npm:5.44.0"
+  checksum: 10c0/33e7cfac06d98dadffe02b7124da974f49dbeee96fbca3fd68e3a519c98d99702dbeb019a9cdb35c794b1cad836e5493dd4983499b3a80a52836c9bca9faa74c
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:5.40.1":
-  version: 5.40.1
-  resolution: "@tanstack/react-query@npm:5.40.1"
+"@tanstack/react-query@npm:5.44.0":
+  version: 5.44.0
+  resolution: "@tanstack/react-query@npm:5.44.0"
   dependencies:
-    "@tanstack/query-core": "npm:5.40.0"
+    "@tanstack/query-core": "npm:5.44.0"
   peerDependencies:
     react: ^18.0.0
-  checksum: 10c0/1585b29127762a57181b0c9bc79711eed08dd6d108441d092a568cd094774ee367d896e885cc92d7ca2fd424c95225c347db4b4e2e62718e665272c1f199bf03
+  checksum: 10c0/d46c159d08358189611d21a5d51cbe7d93d27fc1e92a1205c3f26a8d3b0eb2f8c188d168718a74657499cb1feadc8fe2bd5253de8194bef7a66abdb5da54a197
   languageName: node
   linkType: hard
 
@@ -8785,6 +8801,7 @@ __metadata:
     "@playwright/test": "npm:1.44.1"
     "@radix-ui/react-slot": "npm:1.0.2"
     "@sentry/nextjs": "npm:8.8.0"
+    "@sentry/utils": "npm:8.9.0"
     "@storybook/addon-essentials": "npm:8.1.6"
     "@storybook/addon-interactions": "npm:8.1.6"
     "@storybook/addon-links": "npm:8.1.6"
@@ -8795,7 +8812,7 @@ __metadata:
     "@storybook/test": "npm:8.1.6"
     "@svgr/webpack": "npm:8.1.0"
     "@tanstack/eslint-plugin-query": "npm:5.43.1"
-    "@tanstack/react-query": "npm:5.40.1"
+    "@tanstack/react-query": "npm:5.44.0"
     "@testing-library/dom": "npm:10.1.0"
     "@testing-library/jest-dom": "npm:6.4.6"
     "@testing-library/react": "npm:16.0.0"
@@ -8814,9 +8831,9 @@ __metadata:
     axios: "npm:1.7.2"
     class-variance-authority: "npm:0.7.0"
     clsx: "npm:2.1.1"
-    embla-carousel: "npm:8.1.3"
-    embla-carousel-autoplay: "npm:8.1.3"
-    embla-carousel-react: "npm:8.1.3"
+    embla-carousel: "npm:8.1.4"
+    embla-carousel-autoplay: "npm:8.1.4"
+    embla-carousel-react: "npm:8.1.4"
     eslint: "npm:8.57.0"
     eslint-config-next: "npm:14.2.3"
     eslint-plugin-only-warn: "npm:1.1.0"
@@ -8825,7 +8842,7 @@ __metadata:
     framer-motion: "npm:11.2.10"
     jest: "npm:29.7.0"
     jest-environment-jsdom: "npm:29.7.0"
-    lucide-react: "npm:0.390.0"
+    lucide-react: "npm:0.394.0"
     next: "npm:14.2.3"
     next-auth: "npm:4.24.7"
     postcss: "npm:8.4.38"
@@ -14416,40 +14433,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel-autoplay@npm:8.1.3":
-  version: 8.1.3
-  resolution: "embla-carousel-autoplay@npm:8.1.3"
+"embla-carousel-autoplay@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-autoplay@npm:8.1.4"
   peerDependencies:
-    embla-carousel: 8.1.3
-  checksum: 10c0/7b56a5a2e05018f5908201b110f498ca93f140027dad943620d37cf58ebe73dccd4b8571693c1a6deb8e2f29551deb8eb6e297e92e78657824e3fc6e44e2cd07
+    embla-carousel: 8.1.4
+  checksum: 10c0/d7705e5a4fc8b5403d32e8e18a50951f50d61f9c6821f371f234f65cb98ef7929463206ccd8ffefca0f6317bdef1c990afb15084bbe9ac5f2034509c3e07dee0
   languageName: node
   linkType: hard
 
-"embla-carousel-react@npm:8.1.3":
-  version: 8.1.3
-  resolution: "embla-carousel-react@npm:8.1.3"
+"embla-carousel-react@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-react@npm:8.1.4"
   dependencies:
-    embla-carousel: "npm:8.1.3"
-    embla-carousel-reactive-utils: "npm:8.1.3"
+    embla-carousel: "npm:8.1.4"
+    embla-carousel-reactive-utils: "npm:8.1.4"
   peerDependencies:
     react: ^16.8.0 || ^17.0.1 || ^18.0.0
-  checksum: 10c0/8ed58131adbf8f80b4db340a82a9c658d8a4f6cee087a671e0a666f5f06713ef545fab27f9cca844b91a6503d3bc1ec19f0743ea4fe46902caaa6d9ed8c532d9
+  checksum: 10c0/9844f7e7fc631edcc8f49dc11ee458d4cc7469ab9f4d783cc90e9d3ec3ee82cea96b0e604add6cdc6cfdb5d1a41eb0c7f525d392ffa3eac8f3722c86449406f9
   languageName: node
   linkType: hard
 
-"embla-carousel-reactive-utils@npm:8.1.3":
-  version: 8.1.3
-  resolution: "embla-carousel-reactive-utils@npm:8.1.3"
+"embla-carousel-reactive-utils@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel-reactive-utils@npm:8.1.4"
   peerDependencies:
-    embla-carousel: 8.1.3
-  checksum: 10c0/3f39e87d2324092a585f2edcac40bf49eda81b3dc23fc9f35cc565e8a163831099ebc40f8eaf1c792df2bdd7598a958ff0664eb0eb828b3dfef0ae630a8dd43b
+    embla-carousel: 8.1.4
+  checksum: 10c0/76ea0b7d9d1a35809e024ddb258a09c0a322adc5ba49914a7a15999e8f78781821af3847b327c09365506a925bec3895a6d74c5d486d17b236c4f74f727408ca
   languageName: node
   linkType: hard
 
-"embla-carousel@npm:8.1.3":
-  version: 8.1.3
-  resolution: "embla-carousel@npm:8.1.3"
-  checksum: 10c0/f215d2596eae6485f6b13c70808cf6bd87bcec96cbb402520edbe40657faaae2dc044cd88f04968854a42080f00f76a2e58b38e486f5ca43719de62628f9107b
+"embla-carousel@npm:8.1.4":
+  version: 8.1.4
+  resolution: "embla-carousel@npm:8.1.4"
+  checksum: 10c0/8dcd7fa5561fc354dd422440f3e24da8e2bc75617d8c053b88d44a603b69cb123a7ff3deae3eaa174b60a3a2d6bd8852b8ad21c7a3cca4692ce7da4078febf66
   languageName: node
   linkType: hard
 
@@ -20321,12 +20338,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:0.390.0":
-  version: 0.390.0
-  resolution: "lucide-react@npm:0.390.0"
+"lucide-react@npm:0.394.0":
+  version: 0.394.0
+  resolution: "lucide-react@npm:0.394.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/d8062c311e703c592c0704d624855b965ba2caa3260f7158f65eb6a63c0826150ac67d35df210d58830bc6d85f8ad0e98e62c7e02e6f9e37690909aa046f64d0
+  checksum: 10c0/63d040a4ce3789b2aca0e6206ff05aa4620e93f888f6dadf09a0946dcbbcab384410ea3761b32d4afd3a5cd041e3d3f4149c1d83d1680b3502bb552d7620f716
   languageName: node
   linkType: hard
 
