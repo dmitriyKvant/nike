@@ -19,10 +19,10 @@
 		"@turbo/eslint-config": "*",
 		"@turbo/prettier-config": "*",
 		"@turbo/typescript-config": "*",
-		"cspell": "^8.8.4",
+		"cspell": "8.8.4",
 		"eslint": "8.57.0",
-		"prettier": "^3.3.1",
-		"turbo": "^1.13.4",
+		"prettier": "3.3.1",
+		"turbo": "1.13.4",
 		"typescript": "5.4.3"
 	},
 	"dependenciesMeta": {
