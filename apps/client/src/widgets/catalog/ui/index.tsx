@@ -1,23 +1,15 @@
 "use client"
 
-import { useInfiniteQuery } from "@tanstack/react-query"
+import { Spinner } from "@nextui-org/spinner"
 import { useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 
-import { ProductList, getProducts } from "@/entities/product"
+import { ProductList, useInfiniteProducts } from "@/entities/product"
 
 export const Catalog: React.FC = () => {
 	const ref = useRef(null)
 	const isInView = useInView(ref)
-	const { isPending, data, fetchNextPage, isFetchingNextPage } = useInfiniteQuery({
-		queryKey: ["products"],
-		queryFn: ({ pageParam }) => getProducts({ page: pageParam }),
-		initialPageParam: 1,
-		getNextPageParam: (lastPage, allPages, lastPageParam) => {
-			if (lastPageParam < lastPage.meta.pagination.pageCount) return lastPageParam + 1
-			return undefined
-		},
-	})
+	const { isPending, data, fetchNextPage, isFetchingNextPage } = useInfiniteProducts()
 	useEffect(() => {
 		if (isInView) {
 			fetchNextPage()
@@ -32,14 +24,16 @@ export const Catalog: React.FC = () => {
 					cushioning during extended stretches of running.
 				</p>
 			</div>
-			{
-				<ProductList
-					isPending={isPending}
-					data={data?.pages.flatMap((page) => page.data)}
-					isFetchingNextPage={isFetchingNextPage}
-					ref={ref}
+			<ProductList
+				isPending={isPending}
+				data={data}
+			/>
+			{isFetchingNextPage ?
+				<Spinner
+					color="default"
+					className="mt-[80px] flex justify-center"
 				/>
-			}
+			:	<div ref={ref} />}
 		</div>
 	)
 }

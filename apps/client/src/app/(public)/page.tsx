@@ -1,8 +1,9 @@
 import { HydrationBoundary, QueryClient, dehydrate } from "@tanstack/react-query"
 
 import { Catalog } from "@/widgets/catalog"
+import { Hero } from "@/widgets/hero"
 
-import { ProductCarousel, getProducts, getSliders } from "@/entities/product"
+import { getProducts, getSliders } from "@/entities/product"
 
 export default async function HomePage() {
 	const queryClient = new QueryClient()
@@ -17,7 +18,7 @@ export default async function HomePage() {
 	})
 	return (
 		<HydrationBoundary state={dehydrate(queryClient)}>
-			<ProductCarousel />
+			<Hero />
 			<Catalog />
 		</HydrationBoundary>
 	)

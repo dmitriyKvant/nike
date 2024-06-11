@@ -1,9 +1,6 @@
-"use client"
-
 import { ButtonGroup } from "@nextui-org/button"
 import { Link } from "@nextui-org/link"
 import { Skeleton } from "@nextui-org/skeleton"
-import { useQuery } from "@tanstack/react-query"
 import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import NextLink from "next/link"
@@ -16,13 +13,22 @@ import {
 	CarouselPrevious,
 } from "@/shared/ui"
 
-import { getSliders } from "../api/get-sliders"
+import type { ISliderData } from "../model/slider"
 
-export const ProductCarousel: React.FC = () => {
-	const { isPending, data } = useQuery({
-		queryKey: ["sliders"],
-		queryFn: () => getSliders(),
-	})
+interface IProductCarouselSkeletonProps {
+	isLoaded: boolean
+	data: Partial<ISliderData>[] | undefined
+}
+
+interface IProductCarouselProps {
+	isLoaded?: boolean
+	data: ISliderData[] | undefined
+}
+
+export const ProductCarousel: React.FC<IProductCarouselProps | IProductCarouselSkeletonProps> = ({
+	isLoaded = true,
+	data,
+}) => {
 	return (
 		<Carousel
 			plugins={[
@@ -38,16 +44,15 @@ export const ProductCarousel: React.FC = () => {
 			className="container pt-[50px]">
 			<Skeleton
 				className="h-[595px]"
-				isLoaded={!isPending}
-				disableAnimation>
+				isLoaded={isLoaded}>
 				<CarouselContent className="ml-0">
-					{data?.data.map((slider) => (
+					{data?.map((slider) => (
 						<CarouselItem
 							key={slider.id}
 							className="relative h-[595px]">
 							<Image
-								src={slider.attributes.picture.data.attributes.url}
-								alt={slider.attributes.picture.data.attributes.alternativeText ?? "Sneakers"}
+								src={slider.attributes?.picture.data.attributes.url ?? ""}
+								alt={slider.attributes?.picture.data.attributes.alternativeText ?? "Sneakers"}
 								width={1360}
 								height={595}
 								priority

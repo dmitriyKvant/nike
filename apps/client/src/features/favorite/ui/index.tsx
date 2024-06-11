@@ -1,5 +1,4 @@
 import { Button } from "@nextui-org/button"
-import React from "react"
 
 import FavoriteIcon from "public/icons/favorite.svg"
 
