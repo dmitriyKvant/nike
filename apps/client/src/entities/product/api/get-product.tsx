@@ -10,8 +10,8 @@ const productQueries: Record<string, string> = {
 
 const productSearchParams = new URLSearchParams(productQueries)
 
-export const getProducts = async (page: number = 1) => {
-	productSearchParams.set("pagination[page]", page.toString())
+export const getProduct = async (slug: string) => {
+	productSearchParams.set("filters[slug]", slug)
 	const { data } = await http.get<IProductResponse>(`/products?${productSearchParams.toString()}`)
 	return data
 }

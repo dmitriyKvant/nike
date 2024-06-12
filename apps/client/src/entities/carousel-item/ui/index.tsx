@@ -1,3 +1,5 @@
+"use client"
+
 import { ButtonGroup } from "@nextui-org/button"
 import { Link } from "@nextui-org/link"
 import { Skeleton } from "@nextui-org/skeleton"
@@ -13,22 +15,10 @@ import {
 	CarouselPrevious,
 } from "@/shared/ui"
 
-import type { ISliderData } from "../model/slider"
+import { useCarouselItems } from "../hook"
 
-interface IProductCarouselSkeletonProps {
-	isLoaded: boolean
-	data: Partial<ISliderData>[] | undefined
-}
-
-interface IProductCarouselProps {
-	isLoaded?: boolean
-	data: ISliderData[] | undefined
-}
-
-export const ProductCarousel: React.FC<IProductCarouselProps | IProductCarouselSkeletonProps> = ({
-	isLoaded = true,
-	data,
-}) => {
+export const MainCarousel: React.FC = () => {
+	const { isPending, data } = useCarouselItems()
 	return (
 		<Carousel
 			plugins={[
@@ -44,15 +34,15 @@ export const ProductCarousel: React.FC<IProductCarouselProps | IProductCarouselS
 			className="container pt-[50px]">
 			<Skeleton
 				className="h-[595px]"
-				isLoaded={isLoaded}>
+				isLoaded={!isPending}>
 				<CarouselContent className="ml-0">
-					{data?.map((slider) => (
+					{data?.map((carouselItem) => (
 						<CarouselItem
-							key={slider.id}
+							key={carouselItem.id}
 							className="relative h-[595px]">
 							<Image
-								src={slider.attributes?.picture.data.attributes.url ?? ""}
-								alt={slider.attributes?.picture.data.attributes.alternativeText ?? "Sneakers"}
+								src={carouselItem.attributes.preview.data.attributes.url ?? ""}
+								alt={carouselItem.attributes.preview.data.attributes.alternativeText ?? "Sneakers"}
 								width={1360}
 								height={595}
 								priority

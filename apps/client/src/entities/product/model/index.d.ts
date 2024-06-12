@@ -5,6 +5,7 @@ export interface IProductAttributes extends ICmsAttributes {
 	picture: ICmsImage
 	price: number
 	title: string
+	slug: string
 }
 
 export interface IProductData {

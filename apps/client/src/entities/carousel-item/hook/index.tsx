@@ -2,12 +2,12 @@
 
 import { useQuery } from "@tanstack/react-query"
 
-import { getSliders } from "../api/get-sliders"
+import { getCarouselItems } from "../api"
 
-export const useSliders = () => {
+export const useCarouselItems = () => {
 	const { isPending, data } = useQuery({
-		queryKey: ["sliders"],
-		queryFn: () => getSliders(),
+		queryKey: ["carousel-items"],
+		queryFn: () => getCarouselItems(),
 		select: (data) => data.data,
 	})
 	return { isPending, data }

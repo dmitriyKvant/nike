@@ -2,11 +2,11 @@
 
 import type { UseInfiniteQueryResult } from "@tanstack/react-query"
 
-import type { IProductData } from "../model/product"
+import type { IProductData } from "../model"
 import { ProductCard } from "./product-card"
 
 interface IProductListProps extends Pick<UseInfiniteQueryResult, "isPending"> {
-	data: IProductData[] | undefined
+	data?: IProductData[]
 }
 
 export const ProductList: React.FC<IProductListProps> = ({ isPending, data }) => {

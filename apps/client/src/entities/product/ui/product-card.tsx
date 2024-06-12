@@ -6,7 +6,7 @@ import Link from "next/link"
 
 import { findDiscountPercentage } from "@/shared/lib"
 
-import type { IProductAttributes } from "../model/product"
+import type { IProductAttributes } from "../model"
 
 interface IProductCardSkeletonProps extends Partial<IProductAttributes> {
 	isLoaded: boolean

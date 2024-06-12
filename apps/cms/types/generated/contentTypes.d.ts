@@ -656,6 +656,33 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
 	}
 }
 
+export interface ApiCarouselItemCarouselItem extends Schema.CollectionType {
+	collectionName: "carousel_items"
+	info: {
+		singularName: "carousel-item"
+		pluralName: "carousel-items"
+		displayName: "Carousel Item"
+	}
+	options: {
+		draftAndPublish: true
+	}
+	attributes: {
+		preview: Attribute.Media<"images"> & Attribute.Required
+		product: Attribute.Relation<
+			"api::carousel-item.carousel-item",
+			"oneToOne",
+			"api::product.product"
+		>
+		createdAt: Attribute.DateTime
+		updatedAt: Attribute.DateTime
+		publishedAt: Attribute.DateTime
+		createdBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
+			Attribute.Private
+		updatedBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
+			Attribute.Private
+	}
+}
+
 export interface ApiProductProduct extends Schema.CollectionType {
 	collectionName: "products"
 	info: {
@@ -683,30 +710,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
 	}
 }
 
-export interface ApiSliderSlider extends Schema.CollectionType {
-	collectionName: "sliders"
-	info: {
-		singularName: "slider"
-		pluralName: "sliders"
-		displayName: "Slider"
-		description: ""
-	}
-	options: {
-		draftAndPublish: true
-	}
-	attributes: {
-		picture: Attribute.Media<"images"> & Attribute.Required
-		product: Attribute.Relation<"api::slider.slider", "oneToOne", "api::product.product">
-		createdAt: Attribute.DateTime
-		updatedAt: Attribute.DateTime
-		publishedAt: Attribute.DateTime
-		createdBy: Attribute.Relation<"api::slider.slider", "oneToOne", "admin::user"> &
-			Attribute.Private
-		updatedBy: Attribute.Relation<"api::slider.slider", "oneToOne", "admin::user"> &
-			Attribute.Private
-	}
-}
-
 declare module "@strapi/types" {
 	export module Shared {
 		export interface ContentTypes {
@@ -725,8 +728,8 @@ declare module "@strapi/types" {
 			"plugin::users-permissions.permission": PluginUsersPermissionsPermission
 			"plugin::users-permissions.role": PluginUsersPermissionsRole
 			"plugin::users-permissions.user": PluginUsersPermissionsUser
+			"api::carousel-item.carousel-item": ApiCarouselItemCarouselItem
 			"api::product.product": ApiProductProduct
-			"api::slider.slider": ApiSliderSlider
 		}
 	}
 }

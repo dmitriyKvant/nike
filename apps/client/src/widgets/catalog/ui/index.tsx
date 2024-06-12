@@ -4,12 +4,12 @@ import { Spinner } from "@nextui-org/spinner"
 import { useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 
-import { ProductList, useInfiniteProducts } from "@/entities/product"
+import { ProductList, useProducts } from "@/entities/product"
 
 export const Catalog: React.FC = () => {
 	const ref = useRef(null)
 	const isInView = useInView(ref)
-	const { isPending, data, fetchNextPage, isFetchingNextPage } = useInfiniteProducts()
+	const { isPending, data, fetchNextPage, isFetchingNextPage } = useProducts()
 	useEffect(() => {
 		if (isInView) {
 			fetchNextPage()
