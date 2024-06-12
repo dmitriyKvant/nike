@@ -9,6 +9,7 @@ export const Favorite: React.FC = () => {
 			isIconOnly
 			radius="full">
 			<FavoriteIcon className="h-[19.5px] w-[18px] fill-black" />
+			<p className="sr-only">Favorite</p>
 		</Button>
 	)
 }

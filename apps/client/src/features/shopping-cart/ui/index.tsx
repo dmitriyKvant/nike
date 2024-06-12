@@ -9,6 +9,7 @@ export const ShoppingCart: React.FC = () => {
 			radius="full"
 			isIconOnly>
 			<ShoppingCartIcon className="h-[19.5px] w-[18px] fill-black" />
+			<p className="sr-only">Shopping Cart</p>
 		</Button>
 	)
 }
