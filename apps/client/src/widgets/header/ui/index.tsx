@@ -2,8 +2,8 @@ import { Link } from "@nextui-org/link"
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar"
 import NextLink from "next/link"
 
-import { Favorite } from "@/features/favorite"
-import { ShoppingCart } from "@/features/shopping-cart"
+import { CartButton } from "@/features/cart"
+import { WhishlistButton } from "@/features/whishlist"
 
 import { ROUTE } from "@/shared/config"
 import { Logo } from "@/shared/ui"
@@ -47,8 +47,8 @@ export const Header: React.FC = () => {
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent justify="end">
-				<Favorite />
-				<ShoppingCart />
+				<WhishlistButton />
+				<CartButton />
 			</NavbarContent>
 		</Navbar>
 	)
