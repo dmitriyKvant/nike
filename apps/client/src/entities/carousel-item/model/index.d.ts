@@ -1,10 +1,14 @@
 import type { IProductData } from "@/entities/product"
 
-import type { ICmsAttributes, ICmsImage, ICmsMeta } from "@/shared/api"
+import type { ICmsAttributes, ICmsImageData, ICmsMeta } from "@/shared/api"
 
 export interface ICarouselAttributes extends ICmsAttributes {
-	preview: ICmsImage
-	product: IProductData
+	preview: {
+		data: ICmsImageData
+	}
+	product: {
+		data: IProductData
+	}
 }
 
 export interface ICarouselData {
