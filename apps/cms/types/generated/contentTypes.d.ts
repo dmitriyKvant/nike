@@ -301,6 +301,73 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
 	}
 }
 
+export interface ApiCarouselItemCarouselItem extends Schema.CollectionType {
+	collectionName: "carousel_items"
+	info: {
+		singularName: "carousel-item"
+		pluralName: "carousel-items"
+		displayName: "Carousel Item"
+	}
+	options: {
+		draftAndPublish: true
+	}
+	attributes: {
+		preview: Attribute.Media<"images"> & Attribute.Required
+		product: Attribute.Relation<
+			"api::carousel-item.carousel-item",
+			"oneToOne",
+			"api::product.product"
+		>
+		createdAt: Attribute.DateTime
+		updatedAt: Attribute.DateTime
+		publishedAt: Attribute.DateTime
+		createdBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
+			Attribute.Private
+		updatedBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
+			Attribute.Private
+	}
+}
+
+export interface ApiProductProduct extends Schema.CollectionType {
+	collectionName: "products"
+	info: {
+		singularName: "product"
+		pluralName: "products"
+		displayName: "Product"
+		description: ""
+	}
+	options: {
+		draftAndPublish: true
+	}
+	attributes: {
+		title: Attribute.String & Attribute.Required
+		price: Attribute.Decimal & Attribute.Required
+		discountPrice: Attribute.Decimal
+		preview: Attribute.Media<"images"> & Attribute.Required
+		slug: Attribute.UID<"api::product.product", "title"> & Attribute.Required
+		sex: Attribute.Enumeration<["man", "woman"]> & Attribute.Required
+		description: Attribute.RichText
+		images: Attribute.Media<"images", true> & Attribute.Required
+		allSizes: Attribute.JSON &
+			Attribute.CustomField<
+				"plugin::multi-select.multi-select",
+				["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5"]
+			>
+		availableSizes: Attribute.JSON &
+			Attribute.CustomField<
+				"plugin::multi-select.multi-select",
+				["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5"]
+			>
+		createdAt: Attribute.DateTime
+		updatedAt: Attribute.DateTime
+		publishedAt: Attribute.DateTime
+		createdBy: Attribute.Relation<"api::product.product", "oneToOne", "admin::user"> &
+			Attribute.Private
+		updatedBy: Attribute.Relation<"api::product.product", "oneToOne", "admin::user"> &
+			Attribute.Private
+	}
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
 	collectionName: "files"
 	info: {
@@ -618,7 +685,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
 	}
 	options: {
 		draftAndPublish: false
-		timestamps: true
 	}
 	attributes: {
 		username: Attribute.String &
@@ -656,60 +722,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
 	}
 }
 
-export interface ApiCarouselItemCarouselItem extends Schema.CollectionType {
-	collectionName: "carousel_items"
-	info: {
-		singularName: "carousel-item"
-		pluralName: "carousel-items"
-		displayName: "Carousel Item"
-	}
-	options: {
-		draftAndPublish: true
-	}
-	attributes: {
-		preview: Attribute.Media<"images"> & Attribute.Required
-		product: Attribute.Relation<
-			"api::carousel-item.carousel-item",
-			"oneToOne",
-			"api::product.product"
-		>
-		createdAt: Attribute.DateTime
-		updatedAt: Attribute.DateTime
-		publishedAt: Attribute.DateTime
-		createdBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
-			Attribute.Private
-		updatedBy: Attribute.Relation<"api::carousel-item.carousel-item", "oneToOne", "admin::user"> &
-			Attribute.Private
-	}
-}
-
-export interface ApiProductProduct extends Schema.CollectionType {
-	collectionName: "products"
-	info: {
-		singularName: "product"
-		pluralName: "products"
-		displayName: "Product"
-		description: ""
-	}
-	options: {
-		draftAndPublish: true
-	}
-	attributes: {
-		title: Attribute.String & Attribute.Required
-		price: Attribute.Decimal & Attribute.Required
-		discountPrice: Attribute.Decimal
-		picture: Attribute.Media<"images"> & Attribute.Required
-		slug: Attribute.UID<"api::product.product", "title"> & Attribute.Required
-		createdAt: Attribute.DateTime
-		updatedAt: Attribute.DateTime
-		publishedAt: Attribute.DateTime
-		createdBy: Attribute.Relation<"api::product.product", "oneToOne", "admin::user"> &
-			Attribute.Private
-		updatedBy: Attribute.Relation<"api::product.product", "oneToOne", "admin::user"> &
-			Attribute.Private
-	}
-}
-
 declare module "@strapi/types" {
 	export module Shared {
 		export interface ContentTypes {
@@ -720,6 +732,8 @@ declare module "@strapi/types" {
 			"admin::api-token-permission": AdminApiTokenPermission
 			"admin::transfer-token": AdminTransferToken
 			"admin::transfer-token-permission": AdminTransferTokenPermission
+			"api::carousel-item.carousel-item": ApiCarouselItemCarouselItem
+			"api::product.product": ApiProductProduct
 			"plugin::upload.file": PluginUploadFile
 			"plugin::upload.folder": PluginUploadFolder
 			"plugin::content-releases.release": PluginContentReleasesRelease
@@ -728,8 +742,6 @@ declare module "@strapi/types" {
 			"plugin::users-permissions.permission": PluginUsersPermissionsPermission
 			"plugin::users-permissions.role": PluginUsersPermissionsRole
 			"plugin::users-permissions.user": PluginUsersPermissionsUser
-			"api::carousel-item.carousel-item": ApiCarouselItemCarouselItem
-			"api::product.product": ApiProductProduct
 		}
 	}
 }
