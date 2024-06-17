@@ -5,8 +5,7 @@ import { cn } from "@nextui-org/theme"
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react"
 import * as React from "react"
 
-import ArrowLeftIcon from "public/icons/arrow-left.svg"
-import ArrowRightIcon from "public/icons/arrow-right.svg"
+import ArrowIcon from "public/icons/arrow.svg"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
@@ -192,7 +191,7 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
 				color="primary"
 				className={cn(className)}
 				{...props}>
-				<ArrowLeftIcon className="h-4 w-4" />
+				<ArrowIcon className="h-4 w-4 rotate-180" />
 				<span className="sr-only">Previous slide</span>
 			</Button>
 		)
@@ -215,7 +214,7 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
 				color="primary"
 				className={cn(className)}
 				{...props}>
-				<ArrowRightIcon className="h-4 w-4" />
+				<ArrowIcon className="h-4 w-4" />
 				<span className="sr-only">Next slide</span>
 			</Button>
 		)
