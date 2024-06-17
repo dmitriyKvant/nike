@@ -1,4 +1,4 @@
-name: Lint code
+name: Check code
 
 on:
   pull_request:
@@ -23,3 +23,6 @@ jobs:
 
       - name: Lint code
         run: yarn lint
+
+      - name: Cspell check code
+        run: yarn cspell-check
