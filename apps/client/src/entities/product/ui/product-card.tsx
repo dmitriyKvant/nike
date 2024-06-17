@@ -4,36 +4,42 @@ import { cn } from "@nextui-org/theme"
 import Image from "next/image"
 import Link from "next/link"
 
+import { ROUTE } from "@/shared/config"
 import { findDiscountPercentage } from "@/shared/lib"
 
 import type { IProductAttributes } from "../model"
 
-interface IProductCardSkeletonProps extends Partial<IProductAttributes> {
-	isLoaded: boolean
+interface IProductCardProps
+	extends Pick<IProductAttributes, "discountPrice" | "preview" | "price" | "title" | "slug"> {
+	isLoaded?: boolean
 }
 
-interface IProductCardProps extends IProductAttributes {
-	isLoaded?: boolean
+interface IProductCardSkeletonProps
+	extends Partial<
+		Pick<IProductAttributes, "discountPrice" | "preview" | "price" | "title" | "slug">
+	> {
+	isLoaded: boolean
 }
 
 export const ProductCard: React.FC<IProductCardProps | IProductCardSkeletonProps> = ({
 	discountPrice,
-	picture,
+	preview,
 	price,
 	title,
+	slug,
 	isLoaded = true,
 }) => {
 	return (
 		<Card
 			as={Link}
-			href={"/"}
+			href={`${ROUTE.PRODUCT}/${slug}`}
 			radius="none"
 			shadow="none"
 			className="col-span-4 h-[474.66px] transition-transform hover:scale-105">
 			<Skeleton isLoaded={isLoaded}>
 				<Image
-					src={picture?.data.attributes.formats.small?.url ?? picture?.data.attributes.url ?? ""}
-					alt={picture?.data.attributes.alternativeText ?? "Sneakers"}
+					src={preview?.data.attributes.formats.small?.url ?? preview?.data.attributes.url ?? ""}
+					alt={preview?.data.attributes.alternativeText ?? "Sneakers"}
 					width={386.66}
 					height={386.66}
 					priority
@@ -65,7 +71,7 @@ export const ProductCard: React.FC<IProductCardProps | IProductCardSkeletonProps
 					isLoaded={isLoaded}
 					className="mt-auto h-[24px] w-[80px]">
 					{discountPrice && price && (
-						<p className="mt-auto font-medium text-green">
+						<p className="font-medium text-green">
 							{findDiscountPercentage(price, discountPrice)}% off
 						</p>
 					)}
