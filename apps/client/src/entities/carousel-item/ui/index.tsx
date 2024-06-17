@@ -7,6 +7,7 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import NextLink from "next/link"
 
+import { ROUTE } from "@/shared/config"
 import {
 	Carousel,
 	CarouselContent,
@@ -49,7 +50,7 @@ export const MainCarousel: React.FC = () => {
 							/>
 							<Link
 								as={NextLink}
-								href={"/"}
+								href={`${ROUTE.PRODUCT}/${carouselItem.attributes.product.data.attributes.slug}`}
 								className="absolute bottom-[75px] z-20 bg-white px-[40px] py-[25px] font-oswald text-3xl font-medium uppercase">
 								Shop Now
 							</Link>

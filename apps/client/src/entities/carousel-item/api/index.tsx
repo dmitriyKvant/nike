@@ -3,7 +3,7 @@ import { http } from "@/shared/api"
 import type { ICarouselResponse } from "../model"
 
 const carouselItemsQueries: Record<string, string> = {
-	populate: "preview",
+	populate: "preview,product",
 	sort: "id:asc",
 	"filters[product][$notNull]": "true",
 }

@@ -1,11 +1,20 @@
-import type { ICmsAttributes, ICmsImage, ICmsMeta } from "@/shared/api"
+import type { ICmsAttributes, ICmsImageData, ICmsMeta } from "@/shared/api"
 
 export interface IProductAttributes extends ICmsAttributes {
+	allSizes: string[]
+	availableSizes: string[]
+	description?: string
 	discountPrice?: number
-	picture: ICmsImage
+	preview: {
+		data: ICmsImageData
+	}
+	images: {
+		data: ICmsImageData[]
+	}
 	price: number
 	title: string
 	slug: string
+	sex: "man" | "woman"
 }
 
 export interface IProductData {

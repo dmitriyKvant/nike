@@ -1,4 +1,7 @@
 @tailwind components;
 
 @layer components {
+	.markdown ul {
+		@apply mt-[20px] flex flex-col gap-y-[10px];
+	}
 }

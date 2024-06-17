@@ -14,7 +14,7 @@ export const Catalog: React.FC = () => {
 		if (isInView) {
 			fetchNextPage()
 		}
-	})
+	}, [isInView])
 	return (
 		<div className="container pt-[80px] content-offset">
 			<div className="mb-[80px] text-center">

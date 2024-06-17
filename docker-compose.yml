@@ -15,8 +15,6 @@ services:
       - ./apps/client:/app/apps/client
     networks:
       - cms
-    depends_on:
-      - cms
   cms:
     container_name: cms
     build:
@@ -33,8 +31,6 @@ services:
       - ./apps/cms:/app/apps/cms
     networks:
       - cms
-    depends_on:
-      - cmsDB
   cmsDB:
     container_name: cmsDB
     image: postgres:16-alpine3.19
