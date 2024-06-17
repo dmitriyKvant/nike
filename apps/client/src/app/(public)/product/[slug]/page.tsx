@@ -1,8 +1,19 @@
+import { HydrationBoundary, dehydrate } from "@tanstack/react-query"
+
+import { getProduct } from "@/entities/product"
+
+import { queryClient } from "@/shared/api"
+
+import { ProductDetailsCard } from "./ui/product-details-card"
+
 export default async function ProductPage({ params }: { params: { slug: string } }) {
-	const res = await fetch(
-		`${process.env.NEXT_PUBLIC_CMS_API_URL}/products?populate=*&filters[slug]=${params.slug}`,
+	await queryClient.prefetchQuery({
+		queryKey: ["products", params.slug],
+		queryFn: () => getProduct(params.slug),
+	})
+	return (
+		<HydrationBoundary state={dehydrate(queryClient)}>
+			<ProductDetailsCard slug={params.slug} />
+		</HydrationBoundary>
 	)
-	const data = await res.json()
-	console.log(data.data)
-	return <div>{params.slug}</div>
 }
