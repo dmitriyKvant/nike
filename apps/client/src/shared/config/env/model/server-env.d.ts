@@ -2,7 +2,7 @@ import z from "zod"
 
 const serverEnvSchema = z.object({
 	CMS_UPLOADS_URL: z.string().url(),
-	UPLOADS_PATH: z.string(),
+	UPLOADS_ROUTE: z.string(),
 	NEXTAUTH_SECRET: z.string(),
 	GOOGLE_CLIENT_ID: z.string().url(),
 	GOOGLE_CLIENT_SECRET: z.string(),
