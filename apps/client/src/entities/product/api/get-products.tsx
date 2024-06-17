@@ -3,7 +3,7 @@ import { http } from "@/shared/api"
 import type { IProductResponse } from "../model"
 
 const productQueries: Record<string, string> = {
-	populate: "picture",
+	populate: "preview,images",
 	sort: "id:asc",
 	"pagination[pageSize]": "12",
 }
