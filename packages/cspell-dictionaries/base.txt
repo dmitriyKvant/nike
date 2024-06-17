@@ -4,3 +4,7 @@ dmitriykvant
 pgdata
 preinstall
 autodocs
+embla
+autoplay
+whishlist
+midsole

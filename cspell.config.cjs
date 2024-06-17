@@ -14,5 +14,5 @@ module.exports = {
 		},
 	],
 	dictionaries: ["base", "libs"],
-	ignorePaths: ["apps/cms"],
+	ignorePaths: ["apps/cms", "**/*.svg"],
 }
