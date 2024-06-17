@@ -3,3 +3,4 @@
 
 .env
 .yarn/unplugged
+node_modules

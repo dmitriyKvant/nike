@@ -4,11 +4,11 @@ import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
 
 let nextUIUnpluggedPath =
-	"../../.yarn/unplugged/@nextui-org-theme-virtual-41f9a83a15/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js"
+	"../../.yarn/unplugged/@nextui-org-theme-virtual-64a0fdf025/node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link|spacer).js"
 
 if (process.env.VERCEL) {
 	nextUIUnpluggedPath =
-		"../../node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link).js"
+		"../../node_modules/@nextui-org/theme/dist/components/(button|navbar|skeleton|spinner|card|link|spacer).js"
 }
 
 export default {

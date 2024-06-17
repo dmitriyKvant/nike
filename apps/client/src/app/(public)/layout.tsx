@@ -12,7 +12,7 @@ export default function PublicLayout({ children }: Readonly<{ children: React.Re
 	return (
 		<div className="relative flex min-h-screen flex-col">
 			<Header />
-			<main className="flex-grow">{children}</main>
+			<main className="grow">{children}</main>
 			<Footer />
 		</div>
 	)

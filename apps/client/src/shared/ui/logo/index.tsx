@@ -29,6 +29,7 @@ export const Logo: React.FC<VariantProps<typeof logoVariants>> = ({ variant, siz
 			as={NextLink}
 			href={ROUTE.HOME}>
 			<LogoIcon className={cn(logoVariants({ variant, size }))} />
+			<p className="sr-only">Logo</p>
 		</Link>
 	)
 }

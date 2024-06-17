@@ -1,17 +1,17 @@
 import { http } from "@/shared/api"
 
-import type { IProductResponse } from "../model/product"
+import type { IProductResponse } from "../model"
 
 const productQueries: Record<string, string> = {
-	populate: "picture",
+	populate: "preview,images",
 	sort: "id:asc",
 	"pagination[pageSize]": "12",
 }
 
 const productSearchParams = new URLSearchParams(productQueries)
 
-export const getProducts = async ({ page = 1 }: { page?: number } = {}) => {
-	productSearchParams.set("pagination[page]", String(page))
+export const getProducts = async (page: number = 1) => {
+	productSearchParams.set("pagination[page]", page.toString())
 	const { data } = await http.get<IProductResponse>(`/products?${productSearchParams.toString()}`)
 	return data
 }

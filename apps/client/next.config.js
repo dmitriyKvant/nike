@@ -14,7 +14,7 @@ const config = {
 	async rewrites() {
 		return [
 			{
-				source: `${process.env.UPLOADS_PATH}/:path*`,
+				source: `${process.env.UPLOADS_ROUTE}/:path*`,
 				destination: `${process.env.CMS_UPLOADS_URL}/:path*`,
 			},
 		]

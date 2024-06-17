@@ -1,23 +1,25 @@
-import { HydrationBoundary, QueryClient, dehydrate } from "@tanstack/react-query"
+import { HydrationBoundary, dehydrate } from "@tanstack/react-query"
 
 import { Catalog } from "@/widgets/catalog"
 
-import { ProductCarousel, getProducts, getSliders } from "@/entities/product"
+import { MainCarousel, getCarouselItems } from "@/entities/carousel-item"
+import { getProducts } from "@/entities/product"
+
+import { queryClient } from "@/shared/api"
 
 export default async function HomePage() {
-	const queryClient = new QueryClient()
 	await queryClient.prefetchQuery({
-		queryKey: ["sliders"],
-		queryFn: () => getSliders(),
+		queryKey: ["carousel-items"],
+		queryFn: () => getCarouselItems(),
 	})
 	await queryClient.prefetchInfiniteQuery({
 		queryKey: ["products"],
-		queryFn: ({ pageParam }) => getProducts({ page: pageParam }),
+		queryFn: ({ pageParam }) => getProducts(pageParam),
 		initialPageParam: 1,
 	})
 	return (
 		<HydrationBoundary state={dehydrate(queryClient)}>
-			<ProductCarousel />
+			<MainCarousel />
 			<Catalog />
 		</HydrationBoundary>
 	)
