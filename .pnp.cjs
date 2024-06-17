@@ -13587,7 +13587,6 @@ const RAW_RUNTIME_STATE =
           ["@nextui-org/system", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.2.2"],\
           ["@nextui-org/theme", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:2.2.6"],\
           ["@playwright/test", "npm:1.44.1"],\
-          ["@radix-ui/react-slot", "virtual:021e2116015b578be89ff8aba97fefb563e391e30d8d3c6d9756164073f88ceb57f5697d5831811bedf4ae83f77b303e7338b3815aa2e7572f29aaea53a6a225#npm:1.0.2"],\
           ["@sentry/nextjs", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:8.9.2"],\
           ["@sentry/utils", "npm:8.9.2"],\
           ["@storybook/addon-essentials", "npm:8.1.9"],\
@@ -13629,7 +13628,6 @@ const RAW_RUNTIME_STATE =
           ["framer-motion", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:11.2.10"],\
           ["jest", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:29.7.0"],\
           ["jest-environment-jsdom", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:29.7.0"],\
-          ["lucide-react", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:0.395.0"],\
           ["next", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:14.2.4"],\
           ["next-auth", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:4.24.7"],\
           ["postcss", "npm:8.4.38"],\
@@ -13639,7 +13637,6 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:b8bcdb3b359c8ea92c006149770532e0bc08e725ee50f63583776fee2c96a588ae507a2b1dabc5b458811e97d5dfb0c3e468c151034488a9a42b81411972eeef#npm:18.3.1"],\
           ["react-markdown", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:9.0.1"],\
-          ["remark-gfm", "npm:4.0.0"],\
           ["sharp", "npm:0.33.4"],\
           ["storybook", "npm:8.1.9"],\
           ["tailwind-merge", "npm:2.3.0"],\
@@ -21348,13 +21345,6 @@ const RAW_RUNTIME_STATE =
           ["escape-string-regexp", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:5.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/escape-string-regexp-npm-5.0.0-a663e825ce-10c0.zip/node_modules/escape-string-regexp/",\
-        "packageDependencies": [\
-          ["escape-string-regexp", "npm:5.0.0"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["escodegen", [\
@@ -27762,28 +27752,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["lucide-react", [\
-      ["npm:0.395.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/lucide-react-npm-0.395.0-e84f5d70dd-10c0.zip/node_modules/lucide-react/",\
-        "packageDependencies": [\
-          ["lucide-react", "npm:0.395.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:0.395.0", {\
-        "packageLocation": "./.yarn/__virtual__/lucide-react-virtual-6d395bfe09/4/home/lokich01/.yarn/berry/cache/lucide-react-npm-0.395.0-e84f5d70dd-10c0.zip/node_modules/lucide-react/",\
-        "packageDependencies": [\
-          ["lucide-react", "virtual:277c5e694187722b78e11184b2499b874658ca5742b4a8793fe6d6b14729561616ecc202ad18e7d993de22bc46f1c555d49d88f56f954931f2d3adb103e95ee9#npm:0.395.0"],\
-          ["@types/react", "npm:18.3.3"],\
-          ["react", "npm:18.3.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["luxon", [\
       ["npm:1.28.1", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/luxon-npm-1.28.1-0f675125b8-10c0.zip/node_modules/luxon/",\
@@ -28040,15 +28008,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["markdown-table", [\
-      ["npm:3.0.3", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/markdown-table-npm-3.0.3-b24147eaf5-10c0.zip/node_modules/markdown-table/",\
-        "packageDependencies": [\
-          ["markdown-table", "npm:3.0.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["markdown-to-jsx", [\
       ["npm:7.3.2", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/markdown-to-jsx-npm-7.3.2-ab393676ba-10c0.zip/node_modules/markdown-to-jsx/",\
@@ -28107,19 +28066,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["mdast-util-find-and-replace", [\
-      ["npm:3.0.1", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-find-and-replace-npm-3.0.1-284ae6ddf8-10c0.zip/node_modules/mdast-util-find-and-replace/",\
-        "packageDependencies": [\
-          ["mdast-util-find-and-replace", "npm:3.0.1"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["escape-string-regexp", "npm:5.0.0"],\
-          ["unist-util-is", "npm:6.0.0"],\
-          ["unist-util-visit-parents", "npm:6.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["mdast-util-from-markdown", [\
       ["npm:2.0.1", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-from-markdown-npm-2.0.1-37ffa6064d-10c0.zip/node_modules/mdast-util-from-markdown/",\
@@ -28137,89 +28083,6 @@ const RAW_RUNTIME_STATE =
           ["micromark-util-symbol", "npm:2.0.0"],\
           ["micromark-util-types", "npm:2.0.0"],\
           ["unist-util-stringify-position", "npm:4.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm", [\
-      ["npm:3.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-npm-3.0.0-c4b06d0013-10c0.zip/node_modules/mdast-util-gfm/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm", "npm:3.0.0"],\
-          ["mdast-util-from-markdown", "npm:2.0.1"],\
-          ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
-          ["mdast-util-gfm-footnote", "npm:2.0.0"],\
-          ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
-          ["mdast-util-gfm-table", "npm:2.0.0"],\
-          ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm-autolink-literal", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-autolink-literal-npm-2.0.0-620ccef115-10c0.zip/node_modules/mdast-util-gfm-autolink-literal/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["ccount", "npm:2.0.1"],\
-          ["devlop", "npm:1.1.0"],\
-          ["mdast-util-find-and-replace", "npm:3.0.1"],\
-          ["micromark-util-character", "npm:2.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm-footnote", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-footnote-npm-2.0.0-4a167ca606-10c0.zip/node_modules/mdast-util-gfm-footnote/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm-footnote", "npm:2.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["devlop", "npm:1.1.0"],\
-          ["mdast-util-from-markdown", "npm:2.0.1"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"],\
-          ["micromark-util-normalize-identifier", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm-strikethrough", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-strikethrough-npm-2.0.0-d16d95c318-10c0.zip/node_modules/mdast-util-gfm-strikethrough/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["mdast-util-from-markdown", "npm:2.0.1"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm-table", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-table-npm-2.0.0-45a74f064b-10c0.zip/node_modules/mdast-util-gfm-table/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm-table", "npm:2.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["devlop", "npm:1.1.0"],\
-          ["markdown-table", "npm:3.0.3"],\
-          ["mdast-util-from-markdown", "npm:2.0.1"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["mdast-util-gfm-task-list-item", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/mdast-util-gfm-task-list-item-npm-2.0.0-cb1270a10f-10c0.zip/node_modules/mdast-util-gfm-task-list-item/",\
-        "packageDependencies": [\
-          ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["devlop", "npm:1.1.0"],\
-          ["mdast-util-from-markdown", "npm:2.0.1"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -28483,106 +28346,6 @@ const RAW_RUNTIME_STATE =
           ["micromark-util-normalize-identifier", "npm:2.0.0"],\
           ["micromark-util-resolve-all", "npm:2.0.0"],\
           ["micromark-util-subtokenize", "npm:2.0.1"],\
-          ["micromark-util-symbol", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm", [\
-      ["npm:3.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-npm-3.0.0-d154ab531f-10c0.zip/node_modules/micromark-extension-gfm/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm", "npm:3.0.0"],\
-          ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
-          ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
-          ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
-          ["micromark-extension-gfm-table", "npm:2.0.0"],\
-          ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
-          ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
-          ["micromark-util-combine-extensions", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-autolink-literal", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-autolink-literal-npm-2.0.0-b724d31829-10c0.zip/node_modules/micromark-extension-gfm-autolink-literal/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
-          ["micromark-util-character", "npm:2.1.0"],\
-          ["micromark-util-sanitize-uri", "npm:2.0.0"],\
-          ["micromark-util-symbol", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-footnote", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-footnote-npm-2.0.0-22161d24c5-10c0.zip/node_modules/micromark-extension-gfm-footnote/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
-          ["devlop", "npm:1.1.0"],\
-          ["micromark-core-commonmark", "npm:2.0.1"],\
-          ["micromark-factory-space", "npm:2.0.0"],\
-          ["micromark-util-character", "npm:2.1.0"],\
-          ["micromark-util-normalize-identifier", "npm:2.0.0"],\
-          ["micromark-util-sanitize-uri", "npm:2.0.0"],\
-          ["micromark-util-symbol", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-strikethrough", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-strikethrough-npm-2.0.0-32b23d068e-10c0.zip/node_modules/micromark-extension-gfm-strikethrough/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
-          ["devlop", "npm:1.1.0"],\
-          ["micromark-util-chunked", "npm:2.0.0"],\
-          ["micromark-util-classify-character", "npm:2.0.0"],\
-          ["micromark-util-resolve-all", "npm:2.0.0"],\
-          ["micromark-util-symbol", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-table", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-table-npm-2.0.0-91b6cc0ef5-10c0.zip/node_modules/micromark-extension-gfm-table/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-table", "npm:2.0.0"],\
-          ["devlop", "npm:1.1.0"],\
-          ["micromark-factory-space", "npm:2.0.0"],\
-          ["micromark-util-character", "npm:2.1.0"],\
-          ["micromark-util-symbol", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-tagfilter", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-tagfilter-npm-2.0.0-c5ad486636-10c0.zip/node_modules/micromark-extension-gfm-tagfilter/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
-          ["micromark-util-types", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["micromark-extension-gfm-task-list-item", [\
-      ["npm:2.0.1", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/micromark-extension-gfm-task-list-item-npm-2.0.1-7e34125fdb-10c0.zip/node_modules/micromark-extension-gfm-task-list-item/",\
-        "packageDependencies": [\
-          ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
-          ["devlop", "npm:1.1.0"],\
-          ["micromark-factory-space", "npm:2.0.0"],\
-          ["micromark-util-character", "npm:2.1.0"],\
           ["micromark-util-symbol", "npm:2.0.0"],\
           ["micromark-util-types", "npm:2.0.0"]\
         ],\
@@ -33472,21 +33235,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["remark-gfm", [\
-      ["npm:4.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/remark-gfm-npm-4.0.0-8bb699e315-10c0.zip/node_modules/remark-gfm/",\
-        "packageDependencies": [\
-          ["remark-gfm", "npm:4.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["mdast-util-gfm", "npm:3.0.0"],\
-          ["micromark-extension-gfm", "npm:3.0.0"],\
-          ["remark-parse", "npm:11.0.0"],\
-          ["remark-stringify", "npm:11.0.0"],\
-          ["unified", "npm:11.0.4"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["remark-parse", [\
       ["npm:11.0.0", {\
         "packageLocation": "../../../home/lokich01/.yarn/berry/cache/remark-parse-npm-11.0.0-6484fba69e-10c0.zip/node_modules/remark-parse/",\
@@ -33510,18 +33258,6 @@ const RAW_RUNTIME_STATE =
           ["mdast-util-to-hast", "npm:13.2.0"],\
           ["unified", "npm:11.0.4"],\
           ["vfile", "npm:6.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["remark-stringify", [\
-      ["npm:11.0.0", {\
-        "packageLocation": "../../../home/lokich01/.yarn/berry/cache/remark-stringify-npm-11.0.0-b41a557b8d-10c0.zip/node_modules/remark-stringify/",\
-        "packageDependencies": [\
-          ["remark-stringify", "npm:11.0.0"],\
-          ["@types/mdast", "npm:4.0.4"],\
-          ["mdast-util-to-markdown", "npm:2.1.0"],\
-          ["unified", "npm:11.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\
